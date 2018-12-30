@@ -1,0 +1,24 @@
+{% load staticfiles %}
+ <html>
+    <head>
+
+ <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700" rel="stylesheet" />
+ <link href="{% static "basic.css"%}" rel="stylesheet" />
+ </head>
+ <body>
+<canvas></canvas>
+
+  <div id ="over_stuff" class="center">
+      <fieldset  class="text" >
+          <h1>Weather Station Of Delhi<img src="{{ data.icon_url }}"></h1>
+          <p style="text-align:center;">Temperature : {{ data.temp }}</p>
+          <p  style="text-align:center;">Wind Speed : {{ data.wspeed }}</p>
+          <p  style="text-align:center;">Visibility : {{ data.visible }}</p>
+          <p  style="text-align:center;">Humidity : {{ data.humid }}</p>
+
+        </fieldset>
+  </div>
+</body>
+
+	<script src="{% static "CanvasAnimation.js"%}"></script>
+ </html>
