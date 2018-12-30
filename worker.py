@@ -6,7 +6,7 @@ import  psycopg2.extras
 
 
 def fetch_data():
-    url="http://api.openweathermap.org/data/2.5/weather?id=1273294&APPID=API_KEY"
+    url="http://api.openweathermap.org/data/2.5/weather?id=1273294&APPID=0e26a9343bb868f8d2d951d0a0a84c1c"
     re=requests.get(url).json()
 #print(re['main']['temp'])
 # http://openweathermap.org/img/w/10d.png
@@ -19,7 +19,7 @@ def fetch_data():
 
     #open database
     try:
-        conn = psycopg2.connect(dbname="weather",user="postgres",host="localhost",password="PASSWORD")
+        conn = psycopg2.connect(dbname="d2t5io3g6k0382",user="rcijjjmucpvlqz",host="ec2-54-225-150-216.compute-1.amazonaws.com",password="f34352a1ac8220bd1051b5f6562e381e3c5025cfc27fccf012d828ced7d5a100")
         print("connection established")
     except:
         print("unable to connect")

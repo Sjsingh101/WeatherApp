@@ -19,11 +19,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '!k1#k37mc&!)jefw9#69viqv5(1%vho(m6i95tlv-z)mgt+sxn'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["weathercsi.herokuapp.com"]
 
@@ -79,11 +77,11 @@ WSGI_APPLICATION = 'Weatherapp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'weather',
-        'USER': 'postgres',
-        'PASSWORD': '9953083512Sj',
-        'HOST': '',
-        'PORT': '',
+        'NAME': 'd2t5io3g6k0382',
+        'USER': 'rcijjjmucpvlqz',
+        'PASSWORD': 'f34352a1ac8220bd1051b5f6562e381e3c5025cfc27fccf012d828ced7d5a100',
+        'HOST': 'ec2-54-225-150-216.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
